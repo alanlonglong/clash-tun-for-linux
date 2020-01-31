@@ -12,7 +12,7 @@
    ```bash
    ./install.sh build
    ```
-   or just copy once
+   or just copy one
    ```bash
    cp /path/to/clash ./clash
    ```
