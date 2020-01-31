@@ -20,5 +20,5 @@ ip rule add to 224.0.0.0/4 goto 32766
 ip rule add to 192.168.0.0/16 goto 32766
 ip rule add to 10.0.0.0/8 goto 32766
 ip rule add to 127.0.0.0/8 goto 32766
-ip rule add uidrange "65534-65535" goto 32766
 ip rule add to "172.31.255.253/30" goto 32767     # Prevent broadcast storm
+ip rule add uidrange "65534-65535" goto 32766
