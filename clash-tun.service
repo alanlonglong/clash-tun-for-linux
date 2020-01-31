@@ -1,0 +1,15 @@
+[Unit]
+Description=A rule based proxy tunnel with tun support
+After=network-online.target network.target
+
+[Service]
+Type=simple
+User=nobody
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+ExecStartPre=+/usr/lib/clash/scripts/clash-setup-tun.sh
+ExecStopPost=+/usr/lib/clash/scripts/clash-clean-tun.sh
+ExecStart=/usr/bin/clash -d /srv/clash
+
+[Install]
+WantedBy=multi-user.target
