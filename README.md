@@ -8,7 +8,7 @@
    ```
 
 2. **Build Clash Binary**  
-   Build by install.sh
+   Build by install.sh (upstream [comzyh/clash](https://github.com/comzyh/clash))
    ```bash
    ./install.sh build
    ```
