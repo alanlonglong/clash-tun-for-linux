@@ -29,7 +29,7 @@ function _build() {
     rm -rf clash_build
 
     echo "Build clash with tun support"
-    assert git clone -b tun-dev https://github.com/comzyh/clash clash_build
+    assert git clone -b add-water https://github.com/comzyh/clash clash_build
 
     pushd clash_build > /dev/null
     LANG=C assert make $target
